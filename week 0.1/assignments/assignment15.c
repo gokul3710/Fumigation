@@ -1,26 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
-int getArray();
-int displayArray();
+
+int getArray(int a[]);
+void displayArray(int a[], int size);
+
 
 int main(void){
-    getArray();
-    displayArray();
+    int a[10],size;
+    size = getArray(a);
+    displayArray(a, size);
     return 0;
 }
 
-int getArray(){
-    int i,array[3];
-    printf("Enter 3 Numbers\n");
-    for(i=0;i<3;i++){
-        scanf("%d",&array[i]);
+void getArray(int a[]){
+    int i,size;
+    printf("Enter the limit of array\n");
+    scanf("%d",&size);
+    printf("Enter %d Numbers\n",size);
+    for(i=0;i<size;i++){
+        scanf("%d",&a[i]);
     }
-
+    return size;
 }
 
-void displayArray(){
-    int i,array[3];
-    for(i=0;i<3;i++){
-        printf("%d ",array[i]);
+void displayArray(int a[], int size){
+    int i;
+    printf("Values of array is:\n");
+    for(i=0;i<size;i++){
+        printf("%d ",a[i]);
     }
 }
+
+
+

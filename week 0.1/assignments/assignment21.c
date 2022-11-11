@@ -5,6 +5,7 @@ int main(void){
     int limit,i,j,array[100],array2[100];
     printf("Enter the limit of an array\n");
     scanf("%d",&limit);
+    printf("Enter %d values",limit);
     for(i=0;i<limit;i++){
         scanf("%d",&array[i]);
     }

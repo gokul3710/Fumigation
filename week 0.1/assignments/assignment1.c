@@ -6,5 +6,5 @@ int main(void){
      printf("Enter your favourite letter.\n");
      scanf("%c",&a);
      printf("Your favourite letter is '%c'.",a);
-return 0;
+     return 0;
 }

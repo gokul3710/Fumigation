@@ -10,6 +10,6 @@ int main(void){
             sum = sum + i;
         }
     }
-    printf("Sum of the numbers is : %d",sum);
+    printf("Sum of odd numbers is : %d",sum);
     return 0;
 }
