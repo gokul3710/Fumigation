@@ -19,7 +19,6 @@ int main(void){
                 }else{
                     count++;
                 }
-                
             }
         }
         printf("\n");
