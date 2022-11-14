@@ -12,7 +12,7 @@ int main(void){
     return 0;
 }
 
-void getArray(int a[]){
+int getArray(int a[]){
     int i,size;
     printf("Enter the limit of array\n");
     scanf("%d",&size);

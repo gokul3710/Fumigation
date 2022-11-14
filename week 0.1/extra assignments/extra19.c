@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main(void){
-    float w1,w=20,toKg=1000;
+    float w,toKg=1000;
     int price,add=170,qu;
-    scanf("%f",&w1);
-    w=w1*toKg;
-    printf("%f",w);
+    printf("Enter weight in Kg\n");
+    scanf("%f",&w);
+    w=w*toKg;
     if(w<=500){
         printf("Pay 200rs");
     }else if(w>500){
