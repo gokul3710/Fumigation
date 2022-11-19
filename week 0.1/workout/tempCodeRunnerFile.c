@@ -1,1 +1,1 @@
-printf("* ");
+limit = limit + 2;
