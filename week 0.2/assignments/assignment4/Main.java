@@ -13,10 +13,10 @@ public class Main {
             arr[i]=sc.nextInt();
         }
         for(int i=0;i<limit-1;i++){
-            for(int j=1;j<limit;j++){
+            for(int j=i+1;j<limit;j++){
                 if(arr[i]==arr[j]){
                     limit=limit-1;
-                    for(int k=j;j<limit-1;j++){
+                    for(int k=j;k<limit-1;k++){
                         arr[k]=arr[k+1];
                     }
                 }
@@ -25,8 +25,6 @@ public class Main {
         System.out.println(limit);
         for(int i=0;i<limit;i++){
             System.out.print(arr[i]+ " ");
-        }
-
-        
+        }  
     }
 }

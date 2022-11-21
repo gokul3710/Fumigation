@@ -2,27 +2,34 @@
 #include <stdlib.h>
 
 int main(void) {
-	//puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
-	int a[10],i,j,count,b[10]={0};
-	setbuf(stdout,NULL);
-	printf("Enter array elements");
-	for(i=0;i<10;i++)
+	int a[10],i,j,count,b[10]={0},limit,rep;
+	printf("Enter the limit of array");
+	scanf("%d",&limit);
+	printf("Enter array elements\n");
+	for(i=0;i<limit;i++){
 		scanf("%d",&a[i]);
-	printf("numbers with count =2\n");
-	for(i=0;i<9;i++)
+	}
+	printf("Printf numbers repeating exactly :  \n");
+	scanf("%d",&rep);
+	main(1)
+	int main(int a){
+		
+	}
+	printf("numbers with count %d is : \n",rep);
+	for(i=0;i<limit;i++)
 	{
 		if(b[i]==0)
 		{
 			count=1;
-			for(j=i+1;j<10;j++)
+			for(j=i+1;j<limit;j++)
 			{
 				if(a[i]==a[j])
 				{
 					count++;
-					b[j]=1;
+					b[j]=-1;
 				}
 			}
-			if(count==2)
+			if(count==rep)
 				printf("%d\n",a[i]);
 		}
 	}

@@ -8,12 +8,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int arr[]=new int[100];
         int fq[]=new int[100];
+        
         for(i=0;i<10;i++){
             arr[i]=sc.nextInt();
             fq[i]=0;
         }
 
-        for(i=0;i<10-1;i++){
+        for(i=0;i<10;i++){
             if(fq[i]==0){
                 count=1;
                 for(j=i+1;j<10;j++){

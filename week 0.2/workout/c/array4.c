@@ -1,25 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void){
-   int i,j,arr[100],fq[100];
-   for(i=0;i<10;i++){
-    scanf("%d",&arr[i]);
-    fq[i]=0;
-   } 
-   for(i=0;i<10;i++){
-    if(fq[i]==0 && arr[i]%3==0){
-        for(j=i+1;j<10;j++){
-            if(arr[i]==arr[j]){
-                fq[j]=-1;
+    int a[]={1,2,54,25,7,4,5},i,j,limit=6,k;
+    printf("Sorted array is: \n");
+    for(i=0;i<limit;i++){
+        if(a[i]%2==0){
+            limit=limit-1;
+            
+            for(k=i;k<limit;k++){
+                a[k]=a[k+1];
+                
             }
-            fq[i]=1;
+            i--;
+            pr
         }
+        printf("%d ",a[i]);
     }
-   }
-   for(i=0;i<10;i++){
-    if(fq[i]==1){
-        printf("\n%d ",arr[i]);
-    }
-   }
+
 }
