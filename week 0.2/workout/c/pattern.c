@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int i, j, count = 65, k = 0, n = 10;
+    int i, j, count = 1, k = 0, n = 5;
     for (i = 1; i < 2 * n; i++)
     {
         if (i <= n)
@@ -17,7 +17,7 @@ int main(void)
         }
         for (j = 1; j < k; j++)
         {
-            printf("%c", count);
+            printf("%d", count);
             count++;
         }
         printf("\n");
